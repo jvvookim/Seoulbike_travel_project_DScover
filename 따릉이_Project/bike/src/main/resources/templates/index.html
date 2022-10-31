@@ -1,0 +1,39 @@
+<!--<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  function testAPI(id){
+    fetch("http://localhost:8000/travel?id="+id).then((response)=>response.json()).then((data) => console.log(data))
+  }
+  function testAPI2() {
+      fetch("http://localhost:8000/travelInput", {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify({
+      'id' : 1,
+      'latitude' : 11.11,
+      'longtitude' : 11.11,
+      'nearest' : '성신여대',
+      'rank' : 11,
+      'category' : '집',
+      'time' : 11,
+      'name' : '11 house',
+      'uniq_id' : 'uniqId test'
+      })
+    }).then(response => response.json()).then((data) => console.log(data));
+  }
+
+  </script>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <a href="javascript:testAPI(2);">api test</a>
+  <a href="javascript:testAPI2();">api test2</a>
+</head>
+<body>
+
+</body>
+</html>-->
